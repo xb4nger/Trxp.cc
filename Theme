@@ -38,9 +38,9 @@ local ThemeManager = {} do
     ThemeManager.Folder = "ObsidianLibSettings"
     -- if not isfolder(ThemeManager.Folder) then makefolder(ThemeManager.Folder) end
 
-ThemeManager.Library = "Halloween"
+ThemeManager.Library = "Default"
 ThemeManager.BuiltInThemes = {
-    ["Halloween"] 		= { 1, httpService:JSONDecode([[{"MainColor":"0d0e03","FontFace":"Code","AccentColor":"983b00","OutlineColor":"000000","BackgroundColor":"000000","FontColor":"c85400"}]]) },
+    ["Default"] 		= { 1, httpService:JSONDecode([[{"MainColor":"0d0e03","FontFace":"Code","AccentColor":"983b00","OutlineColor":"000000","BackgroundColor":"000000"}]]) },
     ["BBot"] 			= { 2, httpService:JSONDecode([[{"FontColor":"ffffff","MainColor":"1e1e1e","AccentColor":"7e48a3","BackgroundColor":"232323","OutlineColor":"141414"}]]) },
     ["Fatality"]		= { 3, httpService:JSONDecode([[{"FontColor":"ffffff","MainColor":"1e1842","AccentColor":"c50754","BackgroundColor":"191335","OutlineColor":"3c355d"}]]) },
     ["Jester"] 			= { 4, httpService:JSONDecode([[{"FontColor":"ffffff","MainColor":"242424","AccentColor":"db4467","BackgroundColor":"1c1c1c","OutlineColor":"373737"}]]) },
@@ -59,6 +59,7 @@ ThemeManager.BuiltInThemes = {
     ["Oceanic Next"] 	= { 17, httpService:JSONDecode([[{"FontColor":"d8dee9","MainColor":"1b2b34","AccentColor":"6699cc","BackgroundColor":"16232a","OutlineColor":"343d46"}]]) },
     ["Material"] 		= { 18, httpService:JSONDecode([[{"FontColor":"eeffff","MainColor":"212121","AccentColor":"82aaff","BackgroundColor":"151515","OutlineColor":"424242"}]]) },
 }
+
 
 
     function ThemeManager:SetLibrary(library)
